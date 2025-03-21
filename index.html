@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayal Enterprise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        /* Welcome Page Styles */
+        #welcome-page {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #004080; /* Dark Blue */
+            color: #fff;
+            text-align: center;
+        }
+        #welcome-page h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        #welcome-page p {
+            font-size: 1.2em;
+            margin: 10px 0 0;
+        }
+        #welcome-page button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #fff; /* White */
+            color: #004080; /* Dark Blue */
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #welcome-page button:hover {
+            background-color: #f4f4f4; /* Light Gray */
+        }
+        /* Main Content Styles */
+        header {
+            background-color: #004080; /* Dark Blue */
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img {
+            height: 80px; /* Adjust logo size */
+            margin-bottom: 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #333; /* Dark Gray */
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .about, .services, .contact {
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #004080; /* Dark Blue */
+            border-bottom: 2px solid #004080; /* Dark Blue */
+            padding-bottom: 5px;
+        }
+        footer {
+            background-color: #333; /* Dark Gray */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Page -->
+    <div id="welcome-page">
+        <div>
+            <h1>Welcome to Dayal Enterprise</h1>
+            <p>Your Trusted Partner in Business Solutions</p>
+            <button onclick="enterSite()">Enter Site</button>
+        </div>
+    </div>
+
+    <!-- Main Content (Hidden Initially) -->
+    <div id="main-content" style="display: none;">
+        <header>
+            <!-- Logo from URL -->
+            <img src="https://iili.io/3z5ubmG.png" alt="Dayal Enterprise Logo">
+            <h1>Dayal Enterprise</h1>
+            <p>Your Trusted Partner in Business Solutions</p>
+        </header>
+        <nav>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="container">
+            <section id="about" class="about">
+                <h2>About Us</h2>
+                <p>Welcome to <strong>Dayal Enterprise</strong>, a leading name in the industry. With years of experience and dedication, we provide top-notch business solutions tailored to meet your needs. Our commitment to quality and customer satisfaction sets us apart.</p>
+            </section>
+            <section id="services" class="services">
+                <h2>Our Services</h2>
+                <ul>
+                    <li>Business Consulting</li>
+                    <li>Supply Chain Solutions</li>
+                    <li>Product Distribution</li>
+                    <li>Market Analysis</li>
+                    <li>Custom Business Solutions</li>
+                </ul>
+            </section>
+            <section id="contact" class="contact">
+                <h2>Contact Us</h2>
+                <p>We’d love to hear from you! Reach out to us for any inquiries or collaborations.</p>
+                <p><strong>Email:</strong> dayalenterprisemundra@yahoo.com</p>
+                <p><strong>Phone:</strong> +91 98791 14034</p>
+                <p><strong>Address:</strong> Mundra Kuchh, Nanakapaya Road, Gujarat, India - 370421</p>
+                <p><strong>GSTIN:</strong> 34EKOPS4842E1ZU</p>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2023 Dayal Enterprise. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Function to hide the welcome page and show the main content
+        function enterSite() {
+            document.getElementById('welcome-page').style.display = 'none';
+            document.getElementById('main-content').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
